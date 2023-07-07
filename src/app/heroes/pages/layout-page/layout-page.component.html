@@ -1,6 +1,6 @@
 <mat-sidenav-container fullscreen>
     <mat-sidenav #sidenav mode="push" [ngStyle]="{width:'250px'}">
-        <mat-toolbar>
+        <mat-toolbar color="primary">
          <span>Menú</span>
          <span class="spacer"></span>
           <button mat-icon-button (click)="sidenav.toggle()">
@@ -10,6 +10,15 @@
         </mat-toolbar>
     </mat-sidenav>
         
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>   
+        <span class="spacer"></span>
+          <button mat-button>
+            Logout
+          </button>
+    </mat-toolbar>
 </mat-sidenav-container>
 
 <router-outlet></router-outlet>
