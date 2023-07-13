@@ -166,6 +166,15 @@
       "alter_ego": "Bruce Wayne",
       "first_appearance": "Detective Comics #27",
       "characters": "Bruce Wayne"
+    },
+    {
+      "id": "f8FwfHB",
+      "superhero": "Fernado",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Strider",
+      "first_appearance": "Udemy 2023",
+      "characters": "Fernando",
+      "alt_img": "https://cdna.artstation.com/p/assets/images/images/006/011/078/large/pablo-marunak-strider-hiryu-niebla.jpg?1549410454"
     }
   ]
 }
