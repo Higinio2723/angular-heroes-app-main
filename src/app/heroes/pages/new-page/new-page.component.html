@@ -1,7 +1,7 @@
 <h1>
-    Editar / Agregar
+    {{ currentHero.id ? 'Editar' : 'Agregar'}}
     héroe
-    <small>Superman</small>
+    <small *ngIf="currentHero.id">{{ currentHero.superhero }}</small>
 </h1>
 <mat-divider class="md-2"></mat-divider>
 
@@ -75,8 +75,11 @@
 
                 </form>
                 <div class="flex justify-content-between">
-                    <button mat-flat-button
+                    <button 
+                    *ngIf="currentHero.id"
+                    mat-flat-button
                     color="warn"
+                    (click)="onDeleteHero()"
                     >
                         Borrar
                     </button>
